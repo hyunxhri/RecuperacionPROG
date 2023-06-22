@@ -1,4 +1,3 @@
-
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
@@ -139,5 +138,4 @@ fun main() = application {
     Window(title= "Calificaciones", onCloseRequest = ::exitApplication, state= rememberWindowState(width= 700.dp, height= 710.dp)) {
         app(datosAlumnos, datosNotas)
     }
-
 }

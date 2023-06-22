@@ -61,7 +61,7 @@ class FileCSVWriter(
         val listaContenidoActualizado = mutableListOf<String>()
         val listaContenidoPorLineas = mutableListOf<List<String>>()
         var contListaNotas = 0
-        val lineas = contenidoArchivos[0].split("\n", "\r")
+        val lineas = contenidoArchivos[0].replace("\r", "").split("\n")
         listaContenidoPorLineas.add(lineas)
         listaContenidoPorLineas.forEach { unidad ->
             unidad.forEach { linea ->
@@ -80,7 +80,7 @@ class FileCSVWriter(
                     val lineaNueva = lineaSeparada.subList(0, posicion).joinToString(",") + "," + notasParaAgregar.joinToString(",")
                     listaContenidoActualizado.add(lineaNueva)
                 } else {
-                    listaContenidoActualizado.add(linea)
+                    if(linea.isNotEmpty()) listaContenidoActualizado.add(linea)
                 }
             }
         }
@@ -139,6 +139,3 @@ class FileCSVWriter(
 
 
 }
-
-
-
