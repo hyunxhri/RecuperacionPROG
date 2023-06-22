@@ -2,6 +2,10 @@ package calculanota
 
 import logs.Logger
 
+/**
+ * Clase encargada de realizar los calculos de los Instrumentos.
+ * @param filasTareasCE Filas donde se encuentran las tareas (instrumentos).
+ */
 class CalculaInstrumento(private var filasTareasCE: MutableList<MutableList<String>>) : Calculadora {
 
     companion object{
@@ -11,6 +15,10 @@ class CalculaInstrumento(private var filasTareasCE: MutableList<MutableList<Stri
         val regexNotaInt = Regex("^[0-9]|10$")
     }
 
+    /**
+     * Función que calcula las notas de los instrumentos.
+     * @return Mapa cuyas claves son los criterios y los valores las notas de todos los alumnos para ese criterio.
+     */
     override fun calculaPorcentajes(): MutableMap<String, MutableList<Double>> {
         val notasPorCriterio = mutableMapOf<String, MutableList<Double>>()
         filasTareasCE.forEach { fila ->
@@ -33,6 +41,11 @@ class CalculaInstrumento(private var filasTareasCE: MutableList<MutableList<Stri
         return notasPorCriterio.toSortedMap()
     }
 
+    /**
+     * Función que obtiene las notas de los instrumentos de esa fila y aplica el porcentaje.
+     * @param fila Fila de Instrumentos.
+     * @return Lista de notas de esa fila.
+     */
     private fun obtenerNotas(fila: MutableList<String>): MutableList<Double> {
         val notas: MutableList<Double> = mutableListOf()
         var porcentaje = 0
@@ -56,6 +69,12 @@ class CalculaInstrumento(private var filasTareasCE: MutableList<MutableList<Stri
     }
 
 
+    /**
+     * Función que suma las notas.
+     * @param notas
+     * @param notasAnteriores
+     * @return Lista de notas actualizada.
+     */
     private fun sumarNotas(notas: List<Double>, notasAnteriores: List<Double>): MutableList<Double> {
         log.info("calculanota.CalculaInstrumento.sumarNotas", "Se han sumado las notas correctamente.")
         return notas.zip(notasAnteriores) { a, b -> a + b }.toMutableList()

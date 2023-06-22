@@ -5,7 +5,14 @@ import java.sql.Statement
 import javax.sql.DataSource
 
 
+/**
+ * Clase que gestiona la base de datos "calificaciones".
+ */
 open class CalificacionesDAOImpl(private val dataSource : DataSource) : CalificacionesDAO {
+
+    /**
+     * Función que crea las tablas.
+     */
     override fun creaBD() {
 
         val alumnos = """
@@ -33,6 +40,12 @@ open class CalificacionesDAOImpl(private val dataSource : DataSource) : Califica
         statement.close()
     }
 
+    /**
+     * Función que comprueba la existencia o no de los datos.
+     * @param table la tabla en la que va a comprobar.
+     * @param value los valores.
+     * @return boolean
+     */
     override fun compruebaExistencia(table: String, value: Int): Boolean {
         var existe = false
 
@@ -53,6 +66,9 @@ open class CalificacionesDAOImpl(private val dataSource : DataSource) : Califica
         return existe
     }
 
+    /**
+     * Función que borra los datos de la BD.
+     */
     override fun borraDatos() {
         try {
             val statement = dataSource.connection.prepareStatement("DELETE FROM MODULOS")
@@ -66,7 +82,11 @@ open class CalificacionesDAOImpl(private val dataSource : DataSource) : Califica
         }
     }
 
-    fun obtenerDatosModulos(): MutableList<MutableList<String>> {
+    /**
+     * Función que obtiene los datos de los Alumnos.
+     * @return datos de los alumnos.
+     */
+    fun obtenerDatosAlumnos(): MutableList<MutableList<String>> {
         val filaCompleta = mutableListOf<MutableList<String>>()
         try {
             val statement: Statement = dataSource.connection.createStatement()
@@ -95,6 +115,10 @@ open class CalificacionesDAOImpl(private val dataSource : DataSource) : Califica
         return filaCompleta
     }
 
+    /**
+     * Función que obtiene los datos de las Notas.
+     * @return datos de los notas.
+     */
     fun obtenerDatosNotas(): MutableList<MutableList<String>> {
         val filaCompleta = mutableListOf<MutableList<String>>()
         try {

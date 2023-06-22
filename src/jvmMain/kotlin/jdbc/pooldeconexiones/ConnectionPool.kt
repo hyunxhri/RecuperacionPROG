@@ -7,7 +7,9 @@ import javax.sql.DataSource
 import com.zaxxer.hikari.HikariConfig
 
 
-
+/**
+ * Clase de pool de conexiones.
+ */
 class ConnectionPool {
 
     companion object {
@@ -30,6 +32,10 @@ class ConnectionPool {
         dataSource = HikariDataSource(config)
     }
 
+    /**
+     * Función para obtener la DB.
+     * @return datasource.
+     */
     fun obtieneDB(): DataSource {
         var connection: Connection? = null
 

@@ -1,6 +1,5 @@
 package app
 import androidx.compose.desktop.ui.tooling.preview.Preview
-import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -18,6 +17,13 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+/**
+ * Función que genera el desplegable.
+ * @param expanded Indica si está expandido o no.
+ * @param onItemClick El elemento clickado.
+ * @param onDismiss Para abrir o cerrar desplegable al clickar en otro lado.
+ * @param options Las opciones del desplegable.
+ */
 @Composable
 fun desplegable(
     expanded: Boolean,
@@ -42,6 +48,11 @@ fun desplegable(
     }
 }
 
+
+/**
+ * Función que genera las iniciales y que llama a la función que genera el desplegable.
+ * @param listaAlumnos Lista que contiene una lista por alumno, incluyendo en ella todos sus datos.
+ */
 @Composable
 fun desplegableNombresConIniciales(listaAlumnos: List<List<String>>): List<String> {
     var taskMenuOpen by remember { mutableStateOf(false) }
@@ -106,6 +117,10 @@ fun desplegableNombresConIniciales(listaAlumnos: List<List<String>>): List<Strin
     return selectedAlumno
 }
 
+/**
+ * Función que genera el modulo y la nota en base al alumno seleccionado.
+ * @param alumno Alumno seleccionado.
+ */
 @Composable
 fun moduloYNotas(alumno : List<String>){
     Box(
@@ -147,6 +162,12 @@ fun moduloYNotas(alumno : List<String>){
     }
 }
 
+
+/**
+ * Función que genera el modulo y la nota en base al alumno seleccionado.
+ * @param alumno Alumno seleccionado.
+ * @param notas Lista que engloba listas con los datos de las notas de cada alumno.
+ */
 @Composable
 fun creaTablaNotas(alumno: List<String>, notas: MutableList<MutableList<String>>) {
     Column{
@@ -220,6 +241,11 @@ fun creaTablaNotas(alumno: List<String>, notas: MutableList<MutableList<String>>
     }
 }
 
+/**
+ * Función que genera el modulo y la nota en base al alumno seleccionado.
+ * @param listaAlumnos Lista que contiene una lista por alumno, incluyendo en ella todos sus datos.
+ * @param notas Lista que engloba listas con los datos de las notas de cada alumno.
+ */
 @Composable
 fun interfazNotas(listaAlumnos: List<List<String>>, notas: MutableList<MutableList<String>>) {
     val alumno = desplegableNombresConIniciales(listaAlumnos)
@@ -257,8 +283,14 @@ fun interfazNotas(listaAlumnos: List<List<String>>, notas: MutableList<MutableLi
     }
 }
 
+
+/**
+ * Función que genera la app.
+ * @param listaAlumnos Lista que contiene una lista por alumno, incluyendo en ella todos sus datos.
+ * @param notas Lista que engloba listas con los datos de las notas de cada alumno.
+ */
 @Preview
 @Composable
-fun app(listaAlumnos: MutableList<MutableList<String>>, notas:MutableList<MutableList<String>>, porcentajes:MutableList<Double>) {
+fun app(listaAlumnos: MutableList<MutableList<String>>, notas:MutableList<MutableList<String>>) {
     interfazNotas(listaAlumnos, notas)
 }

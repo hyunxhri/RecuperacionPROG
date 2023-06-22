@@ -1,15 +1,15 @@
 ,,,,,,,JAC,SBM,RCP,NCB,MAD,MEV,AFG,PFP,AGF,IJC,VKC,ELJ,DMR,JPO,APL,GRB,DST,LSM,JSR,JSG,CVC
 ,,,,%CE,,%RA,Javier Acedo Castrillón,Sara Bulpe Martínez,Rafael Cabrera Perejon,Natalia Cortés Bernal,Maurice Alejandro Darner,Manuel Escobar Vidal,Adrian Fernández Garrido,Pablo Fornell Periñan,Alejandro García Fernández,Ignacio Jiménez Cerpa,Victor Jimenez Corada,Erik López Jiménez,Debora Medina Rivero,Juan Perez Ortega,Alberto Piñero Labrador,Guillermo Rodríguez Benítez,Daniel Saborio Torres,Luis Salado Morán,Jose Alfonso Salazar Ramos,Juan José Sánchez González,Carlos Vela Chávez
-UD2,,,"3. Escribe y depura código, analizando y utilizando las estructuras de control del lenguaje. ",,,"10,0%","0,721","0,721","0,741","0,618","0,776","0,25","0,25","0,754","0,776","0,687","0,705","0,64","0,511","0,556","0,659","0,368","0,633","0,611","0,05","0,589","0,773"
+UD2,,,"3. Escribe y depura código, analizando y utilizando las estructuras de control del lenguaje. ",,,"10,0%","6,6","6,6","6,8","5,7","7,1","2,5","2,5","6,9","7,1","6,3","6,4","5,9","4,8","5,2",6,"3,3","5,8","5,6","0,5","5,4",7
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,UD2.a,,a) Se ha escrito y probado código que haga uso de estructuras de selección.,"2,5%","25,0%",,"1,571","1,571","1,638","1,226","1,755","0,0","0,0","1,68","1,755","1,455","1,517","1,3","0,871","1,021","1,363","0,895","1,442","1,37","0,0","1,13","1,745"
-,UD2.b,,b) Se han utilizado estructuras de repetición.,"2,5%","25,0%",,"1,571","1,571","1,638","1,226","1,755","0,0","0,0","1,68","1,755","1,455","1,517","1,3","0,871","1,021","1,363","0,895","1,442","1,37","0,0","1,13","1,745"
-,UD2.c,,c) Se han utilizado estructuras de repetición.,"0,0%","0,0%",,"0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0","0,0"
-,UD2.d,,d) Se han reconocido las posibilidades de las sentencias de salto.,"0,5%","5,0%",,"0,5","0,5","0,5","0,5","0,5","0,5","0,5","0,5","0,5","0,5","0,5","0,5","0,5","0,5","0,5","0,2","0,4","0,4","0,1","0,5","0,5"
-,UD2.e,,e) Se ha escrito código utilizando control de excepciones.,"1,5%","15,0%",,"0,942","0,942","0,983","0,736","1,053","0,0","0,0","1,008","1,053","0,873","0,91","0,78","0,523","0,612","0,818","0,537","0,865","0,822","0,0","0,678","1,047"
-,UD2.f,,f) Se han creado programas ejecutables utilizando diferentes estructuras de control.,"1,0%","10,0%",,"1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","0,4","0,8","0,8","0,2","1,0","1,0"
-,UD2.g,,g) Se han probado y depurado los programas.,"1,0%","10,0%",,"1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","1,0","0,4","0,8","0,8","0,2","1,0","1,0"
-,UD2.h,,h) Se ha comentado y documentado el código.,"1,0%","10,0%",,"0,628","0,628","0,655","0,49","0,702","0,0","0,0","0,672","0,702","0,582","0,607","0,52","0,348","0,408","0,545","0,358","0,577","0,548","0,0","0,452","0,698"
+,UD2.a,,a) Se ha escrito y probado código que haga uso de estructuras de selección.,"2,5%","25,0%",,,,,,,,,,,,,,,,,,,,,,
+,UD2.b,,b) Se han utilizado estructuras de repetición.,"2,5%","25,0%",,,,,,,,,,,,,,,,,,,,,,
+,UD2.c,,c) Se han utilizado estructuras de repetición.,"0,0%","0,0%",,,,,,,,,,,,,,,,,,,,,,
+,UD2.d,,d) Se han reconocido las posibilidades de las sentencias de salto.,"0,5%","5,0%",,,,,,,,,,,,,,,,,,,,,,
+,UD2.e,,e) Se ha escrito código utilizando control de excepciones.,"1,5%","15,0%",,,,,,,,,,,,,,,,,,,,,,
+,UD2.f,,f) Se han creado programas ejecutables utilizando diferentes estructuras de control.,"1,0%","10,0%",,,,,,,,,,,,,,,,,,,,,,
+,UD2.g,,g) Se han probado y depurado los programas.,"1,0%","10,0%",,,,,,,,,,,,,,,,,,,,,,
+,UD2.h,,h) Se ha comentado y documentado el código.,"1,0%","10,0%",,,,,,,,,,,,,,,,,,,,,,
 ,RA3,Instrumentos,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,Tarea:P2.1 - Ejercicios Condicionales,,,,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,PC,AP,AP,NPR,AP,AP
 ,,,Tarea:P2.2 - Ejercicios Iterativas y saltos,,,,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,AP,NPR,AP,AP
@@ -19,4 +19,3 @@ UD2,,,"3. Escribe y depura código, analizando y utilizando las estructuras de c
 ,"d,f,g",,,,,100%,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,4,8,8,2,10,10
 ,"a,b,c,e,h",,"Tarea:2223 (u1, u2): Prueba especifica. Tabla Multiplicar",,,70%,6,6,"7,93","6,41","7,17",0,0,"7,1","7,17","6,41","7,24",6,"3,31","3,93","5,17","3,45","6,34","6,28",0,"5,03","8,07"
 ,"a,b,c,e,h",,"Cuestionario:2223 (u1, u2): Elementos y estructuras de un lenguaje.",,,30%,"6,94","6,94","3,33","1,39","6,67",0,0,"5,83","6,67","4,44","3,33","3,33","3,89","4,44","6,11","3,89","4,44","3,61",0,"3,33","4,44"
-

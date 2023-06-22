@@ -3,6 +3,10 @@ package gestordearchivos
 import calculanota.CalculaRA
 import logs.Logger
 
+/**
+ * Clase encargada de parsear los archivos.
+ * @param textoArchivosCSV Contenido de archivos sin parsear)
+ */
 class FileCSVParser(private val textoArchivosCSV: MutableList<List<String>>) {
 
     companion object {
@@ -12,6 +16,10 @@ class FileCSVParser(private val textoArchivosCSV: MutableList<List<String>>) {
         private const val PREFIJOUNIDAD = "UD"
     }
 
+    /**
+     * Función que parsea el contenido de un archivo.
+     * @param contenidoArchivo Contenido de 1 archivo, sin parsear.
+     */
     private fun parseaContenidoDeUnArchivo(contenidoArchivo: List<String>): List<String> {
         val contenidoCSV = contenidoArchivo[0].split(",", "\n", "\r")
         val camposParseados = mutableListOf<String>()
@@ -37,6 +45,10 @@ class FileCSVParser(private val textoArchivosCSV: MutableList<List<String>>) {
         return camposParseados.toList()
     }
 
+    /**
+     * Función que parsea el contenido de todos los archivos ya que llama a la función que parsea 1 archivo en bucle y los almacena en una MutableList.
+     * @return contenido de archivos parseados.
+     */
     fun parsearContenidoArchivos(): MutableList<List<String>> {
         val contenidoArchivosCSVParseados = mutableListOf<List<String>>()
         for (csvSinParseo in textoArchivosCSV) {
@@ -47,6 +59,10 @@ class FileCSVParser(private val textoArchivosCSV: MutableList<List<String>>) {
         return contenidoArchivosCSVParseados
     }
 
+    /**
+     * Función que obtiene las filas de los CE.
+     * @param contenidoParseado contenido de archivos parseados.
+     */
     private fun obtenerFilasCE(contenidoParseado: List<String>): MutableList<MutableList<String>> {
         val filasCETodosLosArchivos = mutableListOf<MutableList<String>>()
         var creandoFila = false
@@ -66,6 +82,11 @@ class FileCSVParser(private val textoArchivosCSV: MutableList<List<String>>) {
         return filasCETodosLosArchivos
     }
 
+
+    /**
+     * Función que llama en bucle a obtenerFilasCE() para obtener la de todos los archivos.
+     * @param listaDeContenidoParseado contenido de archivos parseados.
+     */
     fun obtenerFilasCEArchivos(listaDeContenidoParseado: MutableList<List<String>>): MutableList<MutableList<MutableList<String>>> {
         val filasCETodosLosArchivos = mutableListOf<MutableList<MutableList<String>>>()
         for (contenidoParseado in listaDeContenidoParseado){
@@ -76,7 +97,11 @@ class FileCSVParser(private val textoArchivosCSV: MutableList<List<String>>) {
         return filasCETodosLosArchivos
     }
 
-
+    /**
+     * Función que obtiene las tareas(instrumentos) de los CE.
+     * @param contenidoParseado contenido de archivos parseados.
+     * @return lista que engloba una lista por Unidad de las tareas de un archivo.
+     */
     private fun obtenerTareasCE(contenidoParseado: List<String>) : MutableList<MutableList<String>>{
         val filasTareasTodosLosArchivos = mutableListOf<MutableList<String>>()
         val regexTareas = Regex("^\"[a-z](,[a-z])*\"$")
@@ -95,6 +120,11 @@ class FileCSVParser(private val textoArchivosCSV: MutableList<List<String>>) {
         return filasTareasTodosLosArchivos
     }
 
+    /**
+     * Función que llama en bucle a obtenerTareasCE() para obtener la de todos los archivos.
+     * @param listaDeContenidoParseado contenido de archivos parseados.
+     * @return lista que engloba una lista por Unidad de las tareas de cada archivo.
+     */
     fun obtenerTareasCEArchivos(listaDeContenidoParseado: MutableList<List<String>>) : MutableList<MutableList<MutableList<String>>>{
         val tareasCETodosLosArchivos = mutableListOf<MutableList<MutableList<String>>>()
         for (contenidoParseado in listaDeContenidoParseado){
@@ -105,6 +135,11 @@ class FileCSVParser(private val textoArchivosCSV: MutableList<List<String>>) {
         return tareasCETodosLosArchivos
     }
 
+    /**
+     * Función que obtiene los nombres y las iniciales de cada alumno.
+     * @param contenidoParseado contenido de archivos parseados.
+     * @return lista de parejas (nombre, iniciales).
+     */
     fun obtenerNombreseIniciales(contenidoParseado: MutableList<List<String>>): MutableList<Pair<String, String>> {
         val nombreRegex = Regex("^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+(\\s[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+)+\$")
         val paresDeNombres = mutableListOf<Pair<String, String>>()
@@ -123,6 +158,11 @@ class FileCSVParser(private val textoArchivosCSV: MutableList<List<String>>) {
         return paresDeNombres
     }
 
+    /**
+     * Función que obtiene los porcentajes de los RA.
+     * @param contenidoArchivo contenido de archivos.
+     * @return lista con los porcentajes.
+     */
     fun obtenerPorcentajes(contenidoArchivo : MutableList<List<String>>): MutableList<Double> {
         val listaPorcentajes = mutableListOf<Double>()
         var porcentajeAlmacenado = false

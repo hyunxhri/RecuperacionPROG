@@ -17,6 +17,12 @@ import jdbc.dao.notas.NotasDAOImpl
 import jdbc.pooldeconexiones.ConnectionPool
 import java.io.File
 
+/**
+ * Función que calcula las notas de los Instrumentos de cada archivo y los añade a una lista.
+ * @param tareasContenido Es el contenido parseado de los instrumentos.
+ * @return Una lista que contiene un diccionario por cada unidad, el cual tiene como clave la
+ *         letra que identifica el criterio de la tarea y como valor una lista con todas las notas de ese criterio.
+ */
 fun calcularNotasInstrumentos(tareasContenido: MutableList<MutableList<MutableList<String>>>): List<MutableMap<String, MutableList<Double>>> {
     val notasCE: MutableList<MutableMap<String, MutableList<Double>>> = mutableListOf()
     for (tarea in tareasContenido) {
@@ -27,6 +33,14 @@ fun calcularNotasInstrumentos(tareasContenido: MutableList<MutableList<MutableLi
     return notasCE
 }
 
+/**
+ * Función que calcula las notas de los criterios de evaluación de cada archivo y los añade a una lista.
+ * @param filasNotas Filas de cada criterio de evaluación.
+ * @param notasCE Una lista que contiene un diccionario por cada unidad, el cual tiene como clave la
+ *        letra que identifica el criterio de la tarea y como valor una lista con todas las notas de ese criterio.
+ * @return Una lista que contiene un diccionario por cada unidad, el cual tiene como clave la
+ *         letra que identifica el criterio de la tarea y como valor una lista con todas las notas de ese criterio con el porcentaje aplicado.
+ */
 fun calcularTodosCE(filasNotas:  MutableList<MutableList<MutableList<String>>>, notasCE: List<MutableMap<String, MutableList<Double>>>): List<MutableMap<String, MutableList<Double>>> {
     val todosCECalculados = mutableListOf<MutableMap<String, MutableList<Double>>>()
     for ((indice, unidad) in filasNotas.withIndex()) {
@@ -42,9 +56,17 @@ fun calcularTodosCE(filasNotas:  MutableList<MutableList<MutableList<String>>>, 
     return todosCECalculados
 }
 
-fun calcularRA(filasNotas: MutableList<List<String>>, notasCE : List<MutableMap<String, MutableList<Double>>>) :  MutableList<MutableMap<String, MutableList<Double>>>{
+/**
+ * Función que calcula las notas de los resultados de aprendizaje de cada archivo y los añade a una lista.
+ * @param contenidoArchivos Contenido del archivo parseado.
+ * @param notasCE Una lista que contiene un diccionario por cada unidad, el cual tiene como clave la
+ *        letra que identifica el criterio de la tarea y como valor una lista con todas las notas de ese criterio con el porcentaje aplicado.
+ * @return Una lista que contiene un diccionario por cada unidad, el cual tiene como clave la
+ *         letra que identifica el criterio de la tarea y como valor una lista con todas las notas de ese criterio con el porcentaje aplicado.
+ */
+fun calcularRA(contenidoArchivos: MutableList<List<String>>, notasCE : List<MutableMap<String, MutableList<Double>>>) :  MutableList<MutableMap<String, MutableList<Double>>>{
     val todosRACalculados = mutableListOf<MutableMap<String, MutableList<Double>>>()
-    for ((indice, unidad) in filasNotas.withIndex()) {
+    for ((indice, unidad) in contenidoArchivos.withIndex()) {
         val notas = notasCE.getOrNull(indice)
         if (notas != null) {
             val calculadoraRA = CalculaRA(unidad, notas)
@@ -57,19 +79,30 @@ fun calcularRA(filasNotas: MutableList<List<String>>, notasCE : List<MutableMap<
     return todosRACalculados
 }
 
+/**
+ * Función que calcula las notas de los criterios de evaluación de cada archivo y los añade a una lista.
+ * @param todosCECalculados Notas de los CE.
+ * @param todosRACalculados Notas de los RA.
+ * @param filasNotas Filas de criterios de evaluación.
+ * @param contenidoArchivos Contenido del archivo parseado.
+ * @return
+ */
 fun escribirCECalculados(
     todosCECalculados: List<MutableMap<String, MutableList<Double>>>,
     todosRACalculados: MutableList<MutableMap<String, MutableList<Double>>>,
     filasNotas:  MutableList<MutableList<MutableList<String>>>,
     contenidoArchivos: MutableList<List<String>>, listaDeArchivos: MutableList<File>) {
-
     for ((indice, contenidoCriterios) in filasNotas.withIndex()) {
         val writer = FileCSVWriter(todosCECalculados[indice], todosRACalculados[indice], contenidoCriterios, contenidoArchivos[indice])
         val notasFinales = writer.modificaContenido()
-        //writer.sobreescribirArchivos(notasFinales, listaDeArchivos[indice])
+        writer.sobreescribirArchivos(notasFinales, listaDeArchivos[indice])
     }
 }
-fun main(args: Array<String>) = application {
+
+/**
+ * Función main en la que se instancian todos los objetos de las clases.
+ */
+fun main() = application {
 
     // Lectura de archivos.
     val archivos = FileCSVReader("./examples")
@@ -82,7 +115,7 @@ fun main(args: Array<String>) = application {
     val tareasContenido = parser.obtenerTareasCEArchivos(archivosParseados)
     val filasNotas = parser.obtenerFilasCEArchivos(archivosParseados)
     val alumnos = parser.obtenerNombreseIniciales(archivosParseados)
-    val porcentajes = parser.obtenerPorcentajes(archivosParseados)
+    //val porcentajes = parser.obtenerPorcentajes(archivosParseados)
 
     //Llamadas funciones.
     val notasInstrumentos = calcularNotasInstrumentos(tareasContenido)
@@ -98,14 +131,13 @@ fun main(args: Array<String>) = application {
     NotasDAOImpl(dataSource).nuevaNota(alumnos, "PRO", todosRACalculados, todosCECalculados)
     val calificaciones = CalificacionesDAOImpl(dataSource)
     val calificacionesService = CalificacionesDAOService(calificaciones)
-    val datosAlumnos = calificaciones.obtenerDatosModulos()
+    val datosAlumnos = calificaciones.obtenerDatosAlumnos()
     val datosNotas = calificaciones.obtenerDatosNotas()
-
 
 
     //Compose.
     Window(title= "Calificaciones", onCloseRequest = ::exitApplication, state= rememberWindowState(width= 700.dp, height= 710.dp)) {
-        app(datosAlumnos, datosNotas, porcentajes)
+        app(datosAlumnos, datosNotas)
     }
 
 }

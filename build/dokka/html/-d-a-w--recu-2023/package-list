@@ -1,0 +1,115 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/-d-a-w--recu-2023/[root]/index.html
+$dokka.location://calcularNotasInstrumentos/#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]]/PointingToDeclaration/-d-a-w--recu-2023/[root]/calcular-notas-instrumentos.html
+$dokka.location://calcularRA/#kotlin.collections.MutableList[kotlin.collections.List[kotlin.String]]#kotlin.collections.List[kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]]/PointingToDeclaration/-d-a-w--recu-2023/[root]/calcular-r-a.html
+$dokka.location://calcularTodosCE/#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]]#kotlin.collections.List[kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]]/PointingToDeclaration/-d-a-w--recu-2023/[root]/calcular-todos-c-e.html
+$dokka.location://escribirCECalculados/#kotlin.collections.List[kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]]#kotlin.collections.MutableList[kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]]#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]]#kotlin.collections.MutableList[kotlin.collections.List[kotlin.String]]#kotlin.collections.MutableList[java.io.File]/PointingToDeclaration/-d-a-w--recu-2023/[root]/escribir-c-e-calculados.html
+$dokka.location://main/#/PointingToDeclaration/-d-a-w--recu-2023/[root]/main.html
+$dokka.location:app////PointingToDeclaration/-d-a-w--recu-2023/app/index.html
+$dokka.location:app//app/#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/app/app.html
+$dokka.location:app//creaTablaNotas/#kotlin.collections.List[kotlin.String]#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/app/crea-tabla-notas.html
+$dokka.location:app//desplegable/#kotlin.Boolean#kotlin.Function1[kotlin.collections.List[kotlin.String],kotlin.Unit]#kotlin.Function0[kotlin.Unit]#kotlin.collections.List[kotlin.collections.List[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/app/desplegable.html
+$dokka.location:app//desplegableNombresConIniciales/#kotlin.collections.List[kotlin.collections.List[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/app/desplegable-nombres-con-iniciales.html
+$dokka.location:app//interfazNotas/#kotlin.collections.List[kotlin.collections.List[kotlin.String]]#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/app/interfaz-notas.html
+$dokka.location:app//moduloYNotas/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/-d-a-w--recu-2023/app/modulo-y-notas.html
+$dokka.location:calculanota////PointingToDeclaration/-d-a-w--recu-2023/calculanota/index.html
+$dokka.location:calculanota/CalculaCE.Companion///PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-c-e/-companion/index.html
+$dokka.location:calculanota/CalculaCE///PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-c-e/index.html
+$dokka.location:calculanota/CalculaCE/CalculaCE/#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]#kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-c-e/-calcula-c-e.html
+$dokka.location:calculanota/CalculaCE/calculaPorcentajes/#/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-c-e/calcula-porcentajes.html
+$dokka.location:calculanota/CalculaInstrumento.Companion///PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-instrumento/-companion/index.html
+$dokka.location:calculanota/CalculaInstrumento.Companion/regexCE/#/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-instrumento/-companion/regex-c-e.html
+$dokka.location:calculanota/CalculaInstrumento.Companion/regexNota/#/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-instrumento/-companion/regex-nota.html
+$dokka.location:calculanota/CalculaInstrumento.Companion/regexNotaInt/#/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-instrumento/-companion/regex-nota-int.html
+$dokka.location:calculanota/CalculaInstrumento///PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-instrumento/index.html
+$dokka.location:calculanota/CalculaInstrumento/CalculaInstrumento/#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-instrumento/-calcula-instrumento.html
+$dokka.location:calculanota/CalculaInstrumento/calculaPorcentajes/#/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-instrumento/calcula-porcentajes.html
+$dokka.location:calculanota/CalculaRA.Companion///PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-r-a/-companion/index.html
+$dokka.location:calculanota/CalculaRA.Companion/hayPorcentaje/#/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-r-a/-companion/hay-porcentaje.html
+$dokka.location:calculanota/CalculaRA.Companion/porcentajeRegex/#/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-r-a/-companion/porcentaje-regex.html
+$dokka.location:calculanota/CalculaRA///PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-r-a/index.html
+$dokka.location:calculanota/CalculaRA/CalculaRA/#kotlin.collections.List[kotlin.String]#kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-r-a/-calcula-r-a.html
+$dokka.location:calculanota/CalculaRA/calculaPorcentajes/#/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calcula-r-a/calcula-porcentajes.html
+$dokka.location:calculanota/Calculadora///PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calculadora/index.html
+$dokka.location:calculanota/Calculadora/calculaPorcentajes/#/PointingToDeclaration/-d-a-w--recu-2023/calculanota/-calculadora/calcula-porcentajes.html
+$dokka.location:gestordearchivos////PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/index.html
+$dokka.location:gestordearchivos/FileCSVParser.Companion///PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-parser/-companion/index.html
+$dokka.location:gestordearchivos/FileCSVParser///PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-parser/index.html
+$dokka.location:gestordearchivos/FileCSVParser/FileCSVParser/#kotlin.collections.MutableList[kotlin.collections.List[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-parser/-file-c-s-v-parser.html
+$dokka.location:gestordearchivos/FileCSVParser/obtenerFilasCEArchivos/#kotlin.collections.MutableList[kotlin.collections.List[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-parser/obtener-filas-c-e-archivos.html
+$dokka.location:gestordearchivos/FileCSVParser/obtenerNombreseIniciales/#kotlin.collections.MutableList[kotlin.collections.List[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-parser/obtener-nombrese-iniciales.html
+$dokka.location:gestordearchivos/FileCSVParser/obtenerPorcentajes/#kotlin.collections.MutableList[kotlin.collections.List[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-parser/obtener-porcentajes.html
+$dokka.location:gestordearchivos/FileCSVParser/obtenerTareasCEArchivos/#kotlin.collections.MutableList[kotlin.collections.List[kotlin.String]]/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-parser/obtener-tareas-c-e-archivos.html
+$dokka.location:gestordearchivos/FileCSVParser/parsearContenidoArchivos/#/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-parser/parsear-contenido-archivos.html
+$dokka.location:gestordearchivos/FileCSVReader.Companion///PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-reader/-companion/index.html
+$dokka.location:gestordearchivos/FileCSVReader///PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-reader/index.html
+$dokka.location:gestordearchivos/FileCSVReader/FileCSVReader/#kotlin.String/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-reader/-file-c-s-v-reader.html
+$dokka.location:gestordearchivos/FileCSVReader/leeArchivos/#kotlin.collections.MutableList[java.io.File]/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-reader/lee-archivos.html
+$dokka.location:gestordearchivos/FileCSVReader/listaArchivos/#/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-reader/lista-archivos.html
+$dokka.location:gestordearchivos/FileCSVWriter.Companion///PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-writer/-companion/index.html
+$dokka.location:gestordearchivos/FileCSVWriter///PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-writer/index.html
+$dokka.location:gestordearchivos/FileCSVWriter/FileCSVWriter/#kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]#kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]#kotlin.collections.MutableList[kotlin.collections.MutableList[kotlin.String]]#kotlin.collections.List[kotlin.String]/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-writer/-file-c-s-v-writer.html
+$dokka.location:gestordearchivos/FileCSVWriter/modificaContenido/#/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-writer/modifica-contenido.html
+$dokka.location:gestordearchivos/FileCSVWriter/sobreescribirArchivos/#kotlin.collections.MutableList[kotlin.String]#java.io.File/PointingToDeclaration/-d-a-w--recu-2023/gestordearchivos/-file-c-s-v-writer/sobreescribir-archivos.html
+$dokka.location:jdbc.dao.alumnos.entity////PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos.entity/index.html
+$dokka.location:jdbc.dao.alumnos.entity/Alumnos///PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos.entity/-alumnos/index.html
+$dokka.location:jdbc.dao.alumnos.entity/Alumnos/Alumnos/#kotlin.Int#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos.entity/-alumnos/-alumnos.html
+$dokka.location:jdbc.dao.alumnos.entity/Alumnos/id/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos.entity/-alumnos/id.html
+$dokka.location:jdbc.dao.alumnos.entity/Alumnos/inicialesm/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos.entity/-alumnos/inicialesm.html
+$dokka.location:jdbc.dao.alumnos.entity/Alumnos/modulom/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos.entity/-alumnos/modulom.html
+$dokka.location:jdbc.dao.alumnos.entity/Alumnos/nombrem/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos.entity/-alumnos/nombrem.html
+$dokka.location:jdbc.dao.alumnos.entity/Alumnos/notam/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos.entity/-alumnos/notam.html
+$dokka.location:jdbc.dao.alumnos////PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos/index.html
+$dokka.location:jdbc.dao.alumnos/AlumnosDAOImpl///PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos/-alumnos-d-a-o-impl/index.html
+$dokka.location:jdbc.dao.alumnos/AlumnosDAOImpl/AlumnosDAOImpl/#javax.sql.DataSource/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos/-alumnos-d-a-o-impl/-alumnos-d-a-o-impl.html
+$dokka.location:jdbc.dao.alumnos/AlumnosDAOImpl/nuevoAlumno/#kotlin.collections.MutableList[kotlin.Pair[kotlin.String,kotlin.String]]#kotlin.String#kotlin.collections.MutableList[kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]]/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.alumnos/-alumnos-d-a-o-impl/nuevo-alumno.html
+$dokka.location:jdbc.dao.calificaciones////PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/index.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAO///PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o/index.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAO/borraDatos/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o/borra-datos.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAO/compruebaExistencia/#kotlin.String#kotlin.Int/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o/comprueba-existencia.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAO/creaBD/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o/crea-b-d.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOImpl///PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-impl/index.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOImpl/CalificacionesDAOImpl/#javax.sql.DataSource/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-impl/-calificaciones-d-a-o-impl.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOImpl/borraDatos/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-impl/borra-datos.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOImpl/compruebaExistencia/#kotlin.String#kotlin.Int/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-impl/comprueba-existencia.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOImpl/creaBD/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-impl/crea-b-d.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOImpl/obtenerDatosAlumnos/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-impl/obtener-datos-alumnos.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOImpl/obtenerDatosNotas/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-impl/obtener-datos-notas.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOService///PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-service/index.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOService/CalificacionesDAOService/#jdbc.dao.calificaciones.CalificacionesDAOImpl/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-service/-calificaciones-d-a-o-service.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOService/borraDatos/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-service/borra-datos.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOService/compruebaExistencia/#kotlin.String#kotlin.Int/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-service/comprueba-existencia.html
+$dokka.location:jdbc.dao.calificaciones/CalificacionesDAOService/creaBD/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.calificaciones/-calificaciones-d-a-o-service/crea-b-d.html
+$dokka.location:jdbc.dao.notas.entity////PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas.entity/index.html
+$dokka.location:jdbc.dao.notas.entity/Notas///PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas.entity/-notas/index.html
+$dokka.location:jdbc.dao.notas.entity/Notas/Notas/#kotlin.Int#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas.entity/-notas/-notas.html
+$dokka.location:jdbc.dao.notas.entity/Notas/id/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas.entity/-notas/id.html
+$dokka.location:jdbc.dao.notas.entity/Notas/idRAn/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas.entity/-notas/id-r-an.html
+$dokka.location:jdbc.dao.notas.entity/Notas/inicialesn/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas.entity/-notas/inicialesn.html
+$dokka.location:jdbc.dao.notas.entity/Notas/modulon/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas.entity/-notas/modulon.html
+$dokka.location:jdbc.dao.notas.entity/Notas/notaRAn/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas.entity/-notas/nota-r-an.html
+$dokka.location:jdbc.dao.notas.entity/Notas/notasCEn/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas.entity/-notas/notas-c-en.html
+$dokka.location:jdbc.dao.notas////PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas/index.html
+$dokka.location:jdbc.dao.notas/NotasDAOImpl///PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas/-notas-d-a-o-impl/index.html
+$dokka.location:jdbc.dao.notas/NotasDAOImpl/NotasDAOImpl/#javax.sql.DataSource/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas/-notas-d-a-o-impl/-notas-d-a-o-impl.html
+$dokka.location:jdbc.dao.notas/NotasDAOImpl/nuevaNota/#kotlin.collections.MutableList[kotlin.Pair[kotlin.String,kotlin.String]]#kotlin.String#kotlin.collections.MutableList[kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]]#kotlin.collections.List[kotlin.collections.MutableMap[kotlin.String,kotlin.collections.MutableList[kotlin.Double]]]/PointingToDeclaration/-d-a-w--recu-2023/jdbc.dao.notas/-notas-d-a-o-impl/nueva-nota.html
+$dokka.location:jdbc.pooldeconexiones////PointingToDeclaration/-d-a-w--recu-2023/jdbc.pooldeconexiones/index.html
+$dokka.location:jdbc.pooldeconexiones/ConnectionPool.Companion///PointingToDeclaration/-d-a-w--recu-2023/jdbc.pooldeconexiones/-connection-pool/-companion/index.html
+$dokka.location:jdbc.pooldeconexiones/ConnectionPool///PointingToDeclaration/-d-a-w--recu-2023/jdbc.pooldeconexiones/-connection-pool/index.html
+$dokka.location:jdbc.pooldeconexiones/ConnectionPool/ConnectionPool/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.pooldeconexiones/-connection-pool/-connection-pool.html
+$dokka.location:jdbc.pooldeconexiones/ConnectionPool/obtieneDB/#/PointingToDeclaration/-d-a-w--recu-2023/jdbc.pooldeconexiones/-connection-pool/obtiene-d-b.html
+$dokka.location:logs////PointingToDeclaration/-d-a-w--recu-2023/logs/index.html
+$dokka.location:logs/Logger///PointingToDeclaration/-d-a-w--recu-2023/logs/-logger/index.html
+$dokka.location:logs/Logger/Logger/#/PointingToDeclaration/-d-a-w--recu-2023/logs/-logger/-logger.html
+app
+calculanota
+gestordearchivos
+jdbc.dao.alumnos
+jdbc.dao.alumnos.entity
+jdbc.dao.calificaciones
+jdbc.dao.notas
+jdbc.dao.notas.entity
+jdbc.pooldeconexiones
+logs
+

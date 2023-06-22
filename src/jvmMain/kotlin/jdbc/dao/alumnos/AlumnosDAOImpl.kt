@@ -6,8 +6,18 @@ import java.math.BigDecimal
 import java.math.RoundingMode
 import javax.sql.DataSource
 
+/**
+ * Clase que gestiona la tabla alumnos.
+ * @param dataSource
+ */
 class AlumnosDAOImpl(private val dataSource : DataSource): CalificacionesDAOImpl(dataSource){
 
+    /**
+     * Función que genera la fila de datos que se insertará o actualizará en la base de datos.
+     * @param alumnos lista de pares de nombres e iniciales.
+     * @param modulo
+     * @param notasRA todas las notas de RA.
+     */
     fun nuevoAlumno(alumnos: MutableList<Pair<String, String>>, modulo: String, notasRA: MutableList<MutableMap<String, MutableList<Double>>>) {
         var id = 0
         for ((counter, alumno) in alumnos.withIndex()) {
@@ -37,6 +47,10 @@ class AlumnosDAOImpl(private val dataSource : DataSource): CalificacionesDAOImpl
         }
     }
 
+    /**
+     * Función que actualiza una fila.
+     * @param alumnos contenido para actualizar.
+     */
     private fun actualizaAlumnos(alumnos: Alumnos) {
         val sql = "UPDATE ALUMNOS SET inicialesm = ?, nombrem = ?, modulom = ?, notam = ? WHERE id = ?"
         dataSource.connection.use { conn ->
@@ -53,6 +67,10 @@ class AlumnosDAOImpl(private val dataSource : DataSource): CalificacionesDAOImpl
         }
     }
 
+    /**
+     * Función que inserta una nueva fila.
+     * @param alumnos fila a insertar.
+     */
     private fun creaAlumnos(alumnos: Alumnos) {
         val sql = "INSERT INTO ALUMNOS (id, inicialesm, nombrem, modulom, notam) VALUES (?, ?, ?, ?, ?)"
         dataSource.connection.use { conn ->

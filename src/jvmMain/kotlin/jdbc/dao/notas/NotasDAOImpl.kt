@@ -6,7 +6,19 @@ import java.math.BigDecimal
 import java.math.RoundingMode
 import javax.sql.DataSource
 
+/**
+ * Clase que gestiona la tabla notas.
+ * @param dataSource
+ */
 class NotasDAOImpl(private val dataSource: DataSource) : CalificacionesDAOImpl(dataSource) {
+
+    /**
+     * Función que genera la fila de datos que se insertará o actualizará en la base de datos.
+     * @param alumnos lista de pares de nombres e iniciales.
+     * @param modulo
+     * @param notasCE todas las notas de CE.
+     * @param notasRA todas las notas de RA.
+     */
     fun nuevaNota(alumnos: MutableList<Pair<String, String>>, modulo: String, notasRA: MutableList<MutableMap<String, MutableList<Double>>>, notasCE : List<MutableMap<String, MutableList<Double>>>
     ){
         var id = 0
@@ -48,6 +60,10 @@ class NotasDAOImpl(private val dataSource: DataSource) : CalificacionesDAOImpl(d
         }
     }
 
+    /**
+     * Función que actualiza una fila.
+     * @param notas contenido para actualizar.
+     */
     private fun actualizaNota(notas: Notas) {
         val sql = "UPDATE NOTAS SET inicialesn = ?, modulon = ?, idRAn = ?, notaRAn = ?, notasCEn = ? WHERE id = ?"
         dataSource.connection.use { conn ->
@@ -65,6 +81,10 @@ class NotasDAOImpl(private val dataSource: DataSource) : CalificacionesDAOImpl(d
         }
     }
 
+    /**
+     * Función que inserta una nueva fila.
+     * @param notas fila a insertar.
+     */
     private fun creaNota(notas: Notas) {
         val sql = "INSERT INTO NOTAS (id, inicialesn, modulon, idRAn, notaRAn, notasCEn) VALUES (?, ?, ?, ?, ?, ?)"
         dataSource.connection.use { conn ->

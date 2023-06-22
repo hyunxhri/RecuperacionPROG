@@ -4,6 +4,11 @@ import logs.Logger
 import java.math.BigDecimal
 import java.math.RoundingMode
 
+/**
+ * Clase encargada de realizar los calculos de los RA.
+ * @param contenidoArchivo Contenido de archivo parseado.
+ * @param notasCE Notas de los CE.
+ */
 class CalculaRA(private var contenidoArchivo: List<String>, private var notasCE : MutableMap<String, MutableList<Double>> ) : Calculadora {
 
     companion object{
@@ -12,6 +17,10 @@ class CalculaRA(private var contenidoArchivo: List<String>, private var notasCE 
         var hayPorcentaje = false
     }
 
+    /**
+     * Función que calcula los resultados de aprendizaje.
+     * @return Mapa con los resultados de aprendizaje.
+     */
     override fun calculaPorcentajes(): MutableMap<String, MutableList<Double>> {
         val notasRA: MutableMap<String, MutableList<Double>> = mutableMapOf()
         var porcentajeRA = 0.0
